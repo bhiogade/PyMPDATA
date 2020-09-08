@@ -11,6 +11,7 @@ default_mixing_ratios_g_kg = np.array([1, 4, 10])
 default_opt_set = (
     {'n_iters': 1},
     {'n_iters': 2},
+    {'n_iters': 2, 'DPDC': True},
     {'n_iters': 2, 'infinite_gauge': True},
     {'n_iters': 2, 'infinite_gauge': True, 'flux_corrected_transport': True},
     {'n_iters': 3, 'third_order_terms': True},
