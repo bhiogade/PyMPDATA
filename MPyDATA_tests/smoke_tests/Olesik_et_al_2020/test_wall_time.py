@@ -15,7 +15,7 @@ if platform.system() != 'Linux' and 'TRAVIS' in os.environ:
     rtol = .75
 
 
-def test_wall_time(n_runs=3, mrats=[10, ], generate=False, print_tab=True, rtol=rtol):
+def test_wall_time(n_runs=5, mrats=[4, ], generate=False, print_tab=True, rtol=rtol):
     setup = Setup(nr=default_nr * 10, mixing_ratios_g_kg=np.array(mrats))
     table_data = {"opts": [], "values": []}
     for grid in grid_layout_set:
